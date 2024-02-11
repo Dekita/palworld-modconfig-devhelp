@@ -236,7 +236,7 @@ Use the following nodes within your ue blueprint (assumes you are using Palworld
 - Drag from the json result gained in "Get Field" once to get "live" value.
 
 The result should look something similar to this: 
-<img src="https://raw.githubusercontent.com/dekita/palworld-modconfig-devhelp/getjson-bp-example.png" style="margin-top: 28px;">
+<img src="https://raw.githubusercontent.com/dekita/palworld-modconfig-devhelp/main/getjson-bp-example.png" style="margin-top: 28px;">
 
 ## For LUA Mods 
 - coming soon (once i figure out how)
