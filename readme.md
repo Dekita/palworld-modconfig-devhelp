@@ -1,7 +1,7 @@
 
 
 # Mod Config JSON structure
-How to add your own mods configuration options into the palworld mod configuration menu interface by dekitarpg@gmail.com. 
+How to add your own mods configuration options into the [Palworld Mod Config Menu](https://www.nexusmods.com/palworld/mods/577) interface by dekitarpg@gmail.com. 
 
 # General information
 In order for your modconfig.json file to be compatible with the mod config menu, it MUST be an object containing a valid json structure formatted in the way the system expects. 
