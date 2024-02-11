@@ -10,16 +10,16 @@ The following structure details the most basic configurable options - a simple b
 
 ```json
 {
-	"My First Boolean Option": {
-		"type": "boolean",
-		"init": true,
-		"live": true
-	},
-	"My First Floater Option": {
-		"type": "boolean",
-		"init": true,
-		"live": true
-	}
+    "My First Boolean Option": {
+        "type": "boolean",
+        "init": true,
+        "live": true
+    },
+    "My First Floater Option": {
+        "type": "boolean",
+        "init": true,
+        "live": true
+    }
 }
 ```
 
@@ -51,13 +51,13 @@ A standard primative boolean type, can be on or off. (true or false)
 Example JSON: 
 ```json
 {
-	"My Custom Boolean": {
-		"type": "boolean",
+    "My Custom Boolean": {
+        "type": "boolean",
         "desc": "awesome description",
         "flag": "when-server-only",
-		"init": true,
-		"live": true
-	}
+        "init": true,
+        "live": true
+    }
 }
 ```
 
@@ -102,8 +102,8 @@ A regular string type. Allows the user to edit the text.
 Example JSON: 
 ```json
 {
-	"My Custom String": {
-		"type": "string",
+    "My Custom String": {
+        "type": "string",
         "desc": "some description..",
         "flag": "when-server-only",
         "init": "im the initial text",
@@ -118,21 +118,21 @@ Stores a string as the live value, but allows a selection of predefined options 
 Example JSON: 
 ```json
 {
-	"My Custom Object": {
-		"type": "object",
-		"data": {
-			"Object Option 1": {
-				"type": "boolean",
-				"init": true,
-				"live": true
-			},
-			"Object Option 2": {
-				"type": "boolean",
-				"init": true,
-				"live": true
-			}
-		}
-	}
+    "My Custom Object": {
+        "type": "object",
+        "data": {
+            "Object Option 1": {
+                "type": "boolean",
+                "init": true,
+                "live": true
+            },
+            "Object Option 2": {
+                "type": "boolean",
+                "init": true,
+                "live": true
+            }
+        }
+    }
 }
 ```
 
@@ -144,21 +144,21 @@ Only supports the "type" and a "data" properties, where "data" is an object cont
 Example JSON: 
 ```json
 {
-	"My Custom Object": {
-		"type": "object",
-		"data": {
-			"Object Option 1": {
-				"type": "boolean",
-				"init": true,
-				"live": true
-			},
-			"Object Option 2": {
-				"type": "boolean",
-				"init": true,
-				"live": true
-			}
-		}
-	}
+    "My Custom Object": {
+        "type": "object",
+        "data": {
+            "Object Option 1": {
+                "type": "boolean",
+                "init": true,
+                "live": true
+            },
+            "Object Option 2": {
+                "type": "boolean",
+                "init": true,
+                "live": true
+            }
+        }
+    }
 }
 ```
 
@@ -166,23 +166,23 @@ Example JSON:
 # Complete JSON Example 
 ```json
 {
-	"My First Boolean Option": {
-		"type": "boolean",
-		"init": true,
-		"live": true
-	},
-	"My First Floater Option": {
-		"type": "boolean",
-		"init": true,
-		"live": true
-	},
+    "My First Boolean Option": {
+        "type": "boolean",
+        "init": true,
+        "live": true
+    },
+    "My First Floater Option": {
+        "type": "boolean",
+        "init": true,
+        "live": true
+    },
     "My Custom Boolean": {
-		"type": "boolean",
+        "type": "boolean",
         "desc": "awesome description",
         "flag": "when-server-only",
-		"init": true,
-		"live": true
-	},
+        "init": true,
+        "live": true
+    },
     "My Custom Integer": {
         "type": "integer",
         "desc": "some description..",
@@ -206,21 +206,21 @@ Example JSON:
         "init": "im the initial text",
         "live": "im live"
     },
-	"My Custom Object": {
-		"type": "object",
-		"data": {
-			"Object Option 1": {
-				"type": "boolean",
-				"init": true,
-				"live": true
-			},
-			"Object Option 2": {
-				"type": "boolean",
-				"init": true,
-				"live": true
-			}
-		}
-	}
+    "My Custom Object": {
+        "type": "object",
+        "data": {
+            "Object Option 1": {
+                "type": "boolean",
+                "init": true,
+                "live": true
+            },
+            "Object Option 2": {
+                "type": "boolean",
+                "init": true,
+                "live": true
+            }
+        }
+    }
 }
 ```
 
@@ -233,10 +233,13 @@ Use the following nodes within your ue blueprint (assumes you are using Palworld
 - "Append"  - append `Paks/LogicMods/MyAwesomeModName.modconfig.json` to the content directory
 - "LoadJsonFromFile" - make filepath struct and connect to the result from "Append"
 - Drag from the Json result gained in "LoadJsonFromFile" and use "Get Field" once to get the desired "Value Object" using its "Key Name". 
-- Drag from the json result gained in "Get Field" once to get "live" value.
+- Drag from the json result gained in "Get Field" once to get "live" value of the configuration option.
 
 The result should look something similar to this: 
 <img src="https://raw.githubusercontent.com/dekita/palworld-modconfig-devhelp/main/getjson-bp-example.png" style="margin-top: 28px;">
+
+At which point, you simply pull the value pin from the final "Get Field" node, and convert it to your desired data type for processing the confgiruation; integer, float, boolean, or string! 
+
 
 ## For LUA Mods 
 - coming soon (once i figure out how)
