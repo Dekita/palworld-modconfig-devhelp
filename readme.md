@@ -25,6 +25,8 @@ The following structure details the most basic configurable options - a simple b
 
 Simply paste this json into a file named "MyAwesomeModsConfig.modconfig.json", add it to the palworlds installs Content/Paks/LogicMods folder, and launch the game. It should now be displaying within the interface. 
 
+:exclamation: For LUA mods, place the .modconfig.json file in your Win64/Mods/ModName folder, next to the Scripts folder and any enabled.txt file that may be there. This is where the Mod Config Menu will search for your lua mod config file. 
+
 # Breaking down the structure
 Essentially, the json object structure consists of "Key: Value" pairs, where the "Key" is used as the name of the configurable option within the user interface, and the "Value" is an object detailing how the user interface is allowed to manipulate this property. 
 
