@@ -115,25 +115,17 @@ Example JSON:
 ```
 
 ## option
-Stores a string as the live value, but allows a selection of predefined options to the user. Intended as an alternative to "string" type, when the user should not be allowed to enter text. 
+Stores a string as the live value, but allows a selection of predefined options to the user. Intended as an alternative to "string" type, when the user should not be allowed to enter text. "opts" should be an array of the available string options the user can select from. 
 
 Example JSON: 
 ```json
 {
-    "My Custom Object": {
-        "type": "object",
-        "data": {
-            "Object Option 1": {
-                "type": "boolean",
-                "init": true,
-                "live": true
-            },
-            "Object Option 2": {
-                "type": "boolean",
-                "init": true,
-                "live": true
-            }
-        }
+    "My Custom Option": {
+        "type": "option",
+        "desc": "some description.",
+        "opts": ["Option 1","Option 2", "Option 3"],
+        "init": "Option 2",
+        "live": "Option 2"
     }
 }
 ```
@@ -208,6 +200,13 @@ Example JSON:
         "init": "im the initial text",
         "live": "im live"
     },
+    "My Custom Option": {
+        "type": "option",
+        "desc": "some description.",
+        "opts": ["Option 1","Option 2", "Option 3"],
+        "init": "Option 2",
+        "live": "Option 2"
+    },    
     "My Custom Object": {
         "type": "object",
         "data": {
