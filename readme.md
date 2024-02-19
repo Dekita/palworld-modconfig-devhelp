@@ -160,10 +160,10 @@ Example JSON:
 A basic header type. Added in v1.2 to stop developers from using empty object types as headers to split options. Headers also only support "type" and "desc" properties.
 ```json
 {
-	"My Custom Header": {
-		"type": "header",
-		"desc": "This is a header, it's just for looks."
-	}
+    "My Custom Header": {
+        "type": "header",
+        "desc": "This is a header, it's just for looks."
+    }
 }
 ```
 
@@ -189,17 +189,17 @@ Another root level option that allows the mod developer to add basic information
 "link" is an object containing 3 optional properties; "nexus-mod-id", "curse-slug", and "donate". "nexus-mod-id" should be exactly that - the mod id for your mod on nexus mods. "curse-slug" is the url slug path for your mod on curseforge. "donate" allows for either patreon, paypal, or ko-fi links to be set.  
 ```json
 {
-   	"meta": {
-		"game": false, 
-		"vers": "2.0", 
-		"auth": "DekitaRPG", 
-		"desc": "some description",
-		"link": {
-			"nexus-mod-id": "577",
-			"curse-slug": "miscellaneous/mod-config-menu",
-			"donate": "https://www.patreon.com/DekitaRPG"
-		}
-	}
+    "meta": {
+        "game": false, 
+        "vers": "2.0", 
+        "auth": "DekitaRPG", 
+        "desc": "some description",
+        "link": {
+            "nexus-mod-id": "577",
+            "curse-slug": "miscellaneous/mod-config-menu",
+            "donate": "https://www.patreon.com/DekitaRPG"
+        }
+    }
 }
 ```
 
@@ -207,17 +207,17 @@ Another root level option that allows the mod developer to add basic information
 ```json
 {
     "test": true,
-   	"meta": {
-		"game": false, 
-		"vers": "1.0", 
-		"auth": "DekitaRPG", 
-		"desc": "This is an example for custom mod configuration structure",
-		"link": {
-			"nexus-mod-id": "577",
-			"curse-slug": "miscellaneous/mod-config-menu",
-			"donate": "https://www.patreon.com/DekitaRPG"
-		}
-	},
+    "meta": {
+        "game": false, 
+        "vers": "1.0", 
+        "auth": "DekitaRPG", 
+        "desc": "This is an example for custom mod configuration structure",
+        "link": {
+            "nexus-mod-id": "577",
+            "curse-slug": "miscellaneous/mod-config-menu",
+            "donate": "https://www.patreon.com/DekitaRPG"
+        }
+    },
     "My First Boolean Option": {
         "type": "boolean",
         "init": true,
@@ -235,10 +235,10 @@ Another root level option that allows the mod developer to add basic information
         "init": true,
         "live": true
     },
-	"My Custom Header": {
-		"type": "header",
-		"desc": "This is a header, it's just for looks."
-	},
+    "My Custom Header": {
+        "type": "header",
+        "desc": "This is a header, it's just for looks."
+    },
     "My Custom Integer": {
         "type": "integer",
         "desc": "some description..",
