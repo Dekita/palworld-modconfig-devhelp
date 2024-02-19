@@ -168,7 +168,7 @@ A basic header type. Added in v1.2 to stop developers from using empty object ty
 ```
 
 ## test
-A simple boolean flags that can be set in the root level object. Will cause the 'save' button to save to a `testconfig.json` file rather than `modconfig.json`.
+A simple boolean flag that can be set in the root level object. Will cause the 'save' button to save to a `testconfig.json` file rather than `modconfig.json`.
 ```json
 {
     "test": true
@@ -176,7 +176,7 @@ A simple boolean flags that can be set in the root level object. Will cause the 
 ```
 
 ## meta
-Allows the mod developer to add basic information into the config menu. This includes setting the mod version information, as well as links to the mod on nexus and curseforge!
+Another root level option that allows the mod developer to add basic information into the config menu. This includes setting the mod version information, as well as links to the mod on nexus and curseforge!
 
 "game" should be set to `true` if you want to allow for your mod to be configurable while in game. This is a feature intended for v1.3. You should only set this if you have setup callbacks / event bindings for `OnResetModConfig` and `OnSavedModConfig`. This tells the MCM that your mod is ready to be re-configured while in game.
 
