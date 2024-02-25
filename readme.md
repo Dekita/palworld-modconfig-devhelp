@@ -16,9 +16,9 @@ The following structure details the most basic configurable options - a simple b
         "live": true
     },
     "My First Floater Option": {
-        "type": "boolean",
-        "init": true,
-        "live": true
+        "type": "float",
+        "init": 0.5,
+        "live": 0.5
     }
 }
 ```
@@ -147,9 +147,9 @@ Example JSON:
                 "live": true
             },
             "Object Option 2": {
-                "type": "boolean",
-                "init": true,
-                "live": true
+                "type": "float",
+                "init": 0.5,
+                "live": 0.5
             }
         }
     }
@@ -224,9 +224,9 @@ Another root level option that allows the mod developer to add basic information
         "live": true
     },
     "My First Floater Option": {
-        "type": "boolean",
-        "init": true,
-        "live": true
+        "type": "float",
+        "init": 0.5,
+        "live": 0.5
     },
     "My Custom Boolean": {
         "type": "boolean",
