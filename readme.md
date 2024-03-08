@@ -40,6 +40,7 @@ Each "Value Object" MUST contain at least a "type", "init", and "live" propertie
 
 All "Value Objects" can also optionally include the following properties;
 
+- "name" - the name shown in the interface for the option, if you want to display a different name than the key. 
 - "desc" - defines the description shown within the interface info window when the user hovers over this option.
 - "flag" - currently only accepts "when-server-only". This will show an additional [when-server-only] text within the user interface, so that users will know this setting will apply when their game (or the game the mod with its configuration is applied to) is acting as the server. 
 
@@ -130,6 +131,39 @@ Example JSON:
 }
 ```
 
+
+## color
+Stores an rgba object as the live value that allows the user to select a custom color. Intended to do exactly that, and offer devvevlopers the ability to provide customizable color options.
+
+Example JSON: 
+```json
+{
+    "My Custom Color": {
+        "type": "color",
+        "desc": "The text color used for the custom server button",
+        "init": { "r": 0.623961, "g": 0.879623, "b": 0.955974, "a": 1 },
+        "live": { "r": 0.623961, "g": 0.879623, "b": 0.955974, "a": 1 }
+    }
+}
+```
+
+## keybind
+Stores an object with key, bShift, bCtrl, bAlt, and bCmd properties which relates to an unreal engine key chord struct. This option allows for the developer to provide customizable keybind options to users. 
+
+Example JSON: 
+```json
+{
+    "My Custom Keybind": {
+        "type": "keybind",
+        "desc": "This is an example keybind",
+        "init": {"key": "F6","bShift": false,"bCtrl": false,"bAlt": false,"bCmd": false},
+        "live": {"key": "F6","bShift": false,"bCtrl": false,"bAlt": false,"bCmd": false}
+    }
+}
+```
+
+
+
 ## object
 Allows further nesting of other "Value Objects".. Intended for use as a categorization header to seperate various options into more managable segments within the ui. Helpful for mods that feature a lot of various configurables. 
 
@@ -186,7 +220,7 @@ Another root level option that allows the mod developer to add basic information
 
 "desc" should describe the general purpose of the mod.
 
-"link" is an object containing 3 optional properties; "nexus-mod-id", "curse-slug", and "donate". "nexus-mod-id" should be exactly that - the mod id for your mod on nexus mods. "curse-slug" is the url slug path for your mod on curseforge. "donate" allows for either patreon, paypal, or ko-fi links to be set.  
+"link" is an object containing 3 optional properties; "nexus-mod-id", "curse-slug", and "donate". "nexus-mod-id" should be exactly that - the mod id for your mod on nexus mods. "curse-slug" is the url slug path for your mod on curseforge. "donate" allows for either patreon, paypal, ko-fi, or boosty links to be set.  
 ```json
 {
     "meta": {
@@ -268,7 +302,20 @@ Another root level option that allows the mod developer to add basic information
         "opts": ["Option 1","Option 2", "Option 3"],
         "init": "Option 2",
         "live": "Option 2"
-    },    
+    },
+    "My Custom Color": {
+        "type": "color",
+        "name": "I'm some custom name shown",
+        "desc": "The text color used for the custom server button",
+        "init": { "r": 0.623961, "g": 0.879623, "b": 0.955974, "a": 1 },
+        "live": { "r": 0.623961, "g": 0.879623, "b": 0.955974, "a": 1 }
+    },
+    "My Custom Keybind": {
+        "type": "keybind",
+        "desc": "This is an example keybind",
+        "init": {"key": "F6","bShift": false,"bCtrl": false,"bAlt": false,"bCmd": false},
+        "live": {"key": "F6","bShift": false,"bCtrl": false,"bAlt": false,"bCmd": false}
+    }, 
     "My Custom Object": {
         "type": "object",
         "data": {
