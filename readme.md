@@ -42,6 +42,7 @@ All "Value Objects" can also optionally include the following properties;
 
 - "name" - the name shown in the interface for the option, if you want to display a different name than the key. 
 - "desc" - defines the description shown within the interface info window when the user hovers over this option.
+- "reqs" - an array of strings that pair with the "key name" for a "boolean" option type. will only show option when all boolean options specified within the "reqs" property are 'true'.
 - "flag" - currently only accepts "when-server-only". This will show an additional [when-server-only] text within the user interface, so that users will know this setting will apply when their game (or the game the mod with its configuration is applied to) is acting as the server. 
 
 Finally, some "Value Objects" support additional properties, such as integer and float "type" supporting options for min and max. A full list of all supported "Value Object" structures is detailed below;
@@ -306,6 +307,7 @@ Another root level option that allows the mod developer to add basic information
     "My Custom Color": {
         "type": "color",
         "name": "I'm some custom name shown",
+        "reqs": ["My Custom Boolean"],
         "desc": "The text color used for the custom server button",
         "init": { "r": 0.623961, "g": 0.879623, "b": 0.955974, "a": 1 },
         "live": { "r": 0.623961, "g": 0.879623, "b": 0.955974, "a": 1 }
@@ -313,6 +315,7 @@ Another root level option that allows the mod developer to add basic information
     "My Custom Keybind": {
         "type": "keybind",
         "desc": "This is an example keybind",
+        "reqs": ["My Custom Boolean"],
         "init": {"key": "F6","bShift": false,"bCtrl": false,"bAlt": false,"bCmd": false},
         "live": {"key": "F6","bShift": false,"bCtrl": false,"bAlt": false,"bCmd": false}
     }, 
