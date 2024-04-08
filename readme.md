@@ -4,6 +4,7 @@ This repository contains helpful guides for creating compatible mods for certain
 
 # MCM: Mod Config Menu
 Provides an in-game user interface that allows lua+logic mod creators to easily interface with, that in turn allows players to configure variables used within the modders creations.. 
+
 [MCM Setup Guide](/guides/mcm/readme.md)
 
 # xMOG: Transmog Reskin System
