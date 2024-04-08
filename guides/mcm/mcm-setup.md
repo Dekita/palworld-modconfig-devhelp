@@ -45,7 +45,8 @@ At which point, you simply pull the value pin from the final "Get Field" node, a
 
 
 ## For LUA Mods 
-- coming soon (once i figure out how)
+You can include a lua library such as [json.lua](https://github.com/rxi/json.lua) to parse handle your mods json configuraiton file. 
+
 
 # Extra
 - feel free to request additional information be added. 
