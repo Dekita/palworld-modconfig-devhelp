@@ -22,5 +22,5 @@ Adds an in-game user interface that allows reskin mod creators to easily interfa
 ## Extra Support
 Join my [Discord Support Server](https://discord.gg/DCXh2TUF2u) if you need some additional guidance in getting things setup for your own mod. 
 
-I put a lot of effort into my mods, not only to make them work well and look nice, but also to allow other modders to expand upon them in the future! Please consider helping me cover the donut fees by showing your support to my various projects via [Patreon](https://www.patreon.com/DekitaRPG) or [PayPal](https://paypal.me/DekitaRPG)<3
+I put a lot of effort into my mods, not only to make them work well and look nice, but also to allow other modders to expand upon them in the future! Please consider helping this process by showing your support via [Patreon](https://www.patreon.com/DekitaRPG) or [PayPal](https://paypal.me/DekitaRPG)<3
 
