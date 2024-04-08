@@ -98,7 +98,7 @@ Example JSON:
 
 
 ## Weapons
-- Can use Materials/Maerial Instances
+- Can use Materials/Material Instances
 
 
 
