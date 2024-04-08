@@ -210,4 +210,7 @@ Another root level option that allows the mod developer to add basic information
 }
 ```
 
-[Complete Example](/guides/mcm/mcm-example.md)
+
+## Additional Links: 
+- [Full Structure Guide](/guides/mcm/mcm-structure.md)
+- [Complete Example](/guides/mcm/mcm-example.md)
