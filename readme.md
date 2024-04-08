@@ -1,5 +1,5 @@
 # Palworld Mod Configuration Guides
-This repository contains helpful guides for creating compatible mods for certain Palworld mods created by DekitaRPG@gmail.com. Most notibly, the Mod Configuration Menu, and xMOG Reskin System. 
+This repository contains helpful guides for creating compatible mods for certain Palworld mods created by DekitaRPG@gmail.com. Most notibly, the [Mod Configuration Menu](https://www.nexusmods.com/palworld/mods/577), and [xMOG Reskin System](https://www.nexusmods.com/palworld/mods/1204). 
 
 
 # MCM: Mod Config Menu
