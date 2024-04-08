@@ -5,7 +5,7 @@ This repository contains helpful guides for creating compatible mods for certain
 ## MCM: Mod Config Menu
 Provides an in-game user interface that allows lua+logic mod creators to easily interface with, that in turn allows players to configure variables used within the modders creations.. 
 
-- [MCM Setup Guide](/guides/mcm/mcm-setup.md)
+- [MCM JSON Setup Guide](/guides/mcm/mcm-setup.md)
 - [Full Structure Guide](/guides/mcm/mcm-structure.md)
 - [Complete Example](/guides/mcm/mcm-example.md)
 - [Addditional Helpers](/guides/mcm/mcm-helpers.md)
@@ -14,7 +14,7 @@ Provides an in-game user interface that allows lua+logic mod creators to easily 
 ## xMOG: Transmog Reskin System
 Adds an in-game user interface that allows reskin mod creators to easily interface with, that in turn, allows players to customize the skins used during their playthrough. Automatically supports replication (skins shown to other players when playing co-op/multiplayer) providing all parties involved have the relevant skin mods installed.  
 
-- [xMOG Setup Guide](/guides/xmog/xmog-setup.md)
+- [xMOG JOSN Setup Guide](/guides/xmog/xmog-setup.md)
 - [Complete Example: Armor](/guides/xmog/xmog-example-armor.json)
 - [Complete Example: Weapon](/guides/xmog/xmog-example-weapon.json)
 
