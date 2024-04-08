@@ -27,6 +27,8 @@ Simply paste this json into a file named "MyAwesomeModsConfig.modconfig.json", a
 
 :exclamation: For LUA mods, place the .modconfig.json file in your Win64/Mods/ModName folder, next to the Scripts folder and any enabled.txt file that may be there. This is where the Mod Config Menu will search for your lua mod's config file. 
 
+[Full Structure Guide](/guides/mcm/mcm-structure.md)
+
 
 # How to read the configuration within your mod? 
 
