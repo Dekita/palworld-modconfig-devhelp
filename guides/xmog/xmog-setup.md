@@ -1,13 +1,81 @@
 # Skin Json Format Explained:
-```json 
+Note, example data below taken from `~mods/xMOG/DefaultArmors/DefaultHeadEquip005.skin.json`.
+
+
+## gend [armor only]
+Allows item to be restricted (wont be shown within the ui at all) based on the players gender.
+Should be set to the gender of the player as a string, either "F" or "M", Can be left empty (null or completely undefined) to allow skin for any gender.
+
+
+Example JSON: 
+```json
 {
-    "gend": The gender of the player as a string, either "F" or "M", Can be left empty to allow skin for any gender (only for armor)
-    "head": {"hair": false}, // 'hair' Boolean based on if skin includes hair on the mesh + hair material. only applies to head equip
-    "cond": An array of condition objects (future implementation),
-    "item": An array of item id's, that this skin is allowed to be used with,
-    "icon": Game relative 'soft reference' path for the icon to show within the interface,
-    "mesh": Game relative 'soft reference' path for the mesh to use for this skin, weapon, armor, equip, etc,
-    "mats": An array of game relative 'soft reference' paths, for each material the mesh expects.. Order should match the mesh's expectencies.
+    "gend": "F"
+}
+```
+
+## head [head-equip only]
+An object containing various confirable properties for the head when this skinis enabled. The 'hair' boolean should identify if the skin includes hair on the mesh + hair material. 
+
+Example JSON: 
+```json
+{
+    "head": {"hair": false}
+}
+```
+
+## cond
+An array of condition objects (future implementation),
+
+Example JSON: 
+```json
+{
+    "cond": "F"
+}
+```
+
+## item
+An array of item id's, that this skin is allowed to be used with,
+
+Example JSON: 
+```json
+{
+    "item": ["Head005", "Head005_2", "Head005_3", "Head005_4", "Head005_5"]
+}
+```
+
+## icon
+Game relative 'soft reference' path for the icon to show within the interface,
+
+Example JSON: 
+```json
+{
+    "icon": "/Game/Others/InventoryItemIcon/Texture/T_itemicon_Armor_Head005.T_itemicon_Armor_Head005"
+}
+```
+
+
+## mesh
+Game relative 'soft reference' path for the mesh to use for this skin, weapon, armor, equip, etc,
+
+Example JSON: 
+```json
+{
+    "mesh": "/Game/Pal/Model/Character/Player/HeadEquip/HeadEquip005/SK_HeadEquip005.SK_HeadEquip005"
+}
+```
+
+
+## mats
+An array of game relative 'soft reference' paths, for each material the mesh expects.. Order should match the mesh's expectencies.
+
+Example JSON: 
+```json
+{
+    "mats": [
+        "/Game/Pal/Model/Character/Player/HeadEquip/HeadEquip005/MI_HeadEquip005_Hair.MI_HeadEquip005_Hair",
+        "/Game/Pal/Model/Character/Player/HeadEquip/HeadEquip005/MI_HeadEquip005.MI_HeadEquip005"
+    ]
 }
 ```
 
