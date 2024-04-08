@@ -9,10 +9,14 @@ Provides an in-game user interface that allows lua+logic mod creators to easily 
 - [Full Structure Guide](/guides/mcm/mcm-structure.md)
 - [Complete Example](/guides/mcm/mcm-example.md)
 - [Addditional Helpers](/guides/mcm/mcm-helpers.md)
+
+
 ## xMOG: Transmog Reskin System
 Adds an in-game user interface that allows reskin mod creators to easily interface with, that in turn, allows players to customize the skins used during their playthrough. Automatically supports replication (skins shown to other players when playing co-op/multiplayer) providing all parties involved have the relevant skin mods installed.  
 
-[xMOG Setup Guide](/guides/xmog/xmog-setup.md)
+- [xMOG Setup Guide](/guides/xmog/xmog-setup.md)
+- [Complete Example: Armor](/guides/xmog/xmog-example-armor.json)
+- [Complete Example: Weapon](/guides/xmog/xmog-example-weapon.json)
 
 
 ## Extra Support
