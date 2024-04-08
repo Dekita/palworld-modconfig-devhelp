@@ -1,5 +1,5 @@
 # Complete JSON Example 
-Below is a complete example json structure that showcases all possible options in all their glory!! :)
+Below is a complete example json structure that showcases all possible options in their glory!! :)
 
 ```json
 {
