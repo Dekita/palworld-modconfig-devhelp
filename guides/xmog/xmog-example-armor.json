@@ -1,0 +1,16 @@
+{
+    "gend": "F",
+    "item": [
+		"CopperArmor", "CopperArmor_2", "CopperArmor_3", "CopperArmor_4", "CopperArmor_5", 
+		"CopperArmorHeat", "CopperArmorHeat_2", "CopperArmorHeat_3", "CopperArmorHeat_4", "CopperArmorHeat_5",
+		"CopperArmorCold", "CopperArmorCold_2", "CopperArmorCold_3", "CopperArmorCold_4", "CopperArmorCold_5"
+    ],
+    "icon": "/Game/Others/InventoryItemIcon/Texture/T_itemicon_Armor_CopperArmor.T_itemicon_Armor_CopperArmor",
+    "mesh": "/Game/Pal/Model/Character/Player/Outfit/SK_Player_Female_Outfit_Bronze001/SK_Player_Female_Outfit_Bronze001.SK_Player_Female_Outfit_Bronze001",
+    "mats": [
+        "/Game/Pal/Model/Character/Player/Outfit/SK_Player_Female_Outfit_Bronze001/v01/MI_Player_Female_Outfit_Bronze001_v01_M01.MI_Player_Female_Outfit_Bronze001_v01_M01",
+        "/Game/Pal/Model/Character/Player/Body/Female/MI_Player_Female_Body.MI_Player_Female_Body",
+        "/Game/Pal/Model/Character/Player/Outfit/SK_Player_Female_Outfit_Bronze001/v01/MI_Player_Female_Outfit_Bronze001_v01_M02.MI_Player_Female_Outfit_Bronze001_v01_M02",
+        "/Game/Pal/Model/Character/Player/Outfit/SK_Player_Female_Outfit_Bronze001/v01/MI_Player_Female_Outfit_Bronze001_v01_M03.MI_Player_Female_Outfit_Bronze001_v01_M03"
+    ]
+}

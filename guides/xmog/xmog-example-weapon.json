@@ -1,0 +1,6 @@
+{
+    "item": ["Bat"],
+    "icon": "/Game/Others/InventoryItemIcon/Texture/T_itemicon_Weapon_Bat.T_itemicon_Weapon_Bat",
+    "mesh": "/Game/Mods/DekXMOG_P/Skeletons/Bat_ClubWood/SK_ClubWood_Fix.SK_ClubWood_Fix",
+    "mats": ["/Game/Pal/Model/Weapon/ClubWood/MI_PalProp_ClubWood.MI_PalProp_ClubWood"]
+}

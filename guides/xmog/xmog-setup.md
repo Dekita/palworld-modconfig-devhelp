@@ -79,6 +79,11 @@ Example JSON:
 }
 ```
 
+[Complete Example: Armor](/guides/xmog/xmog-example-armor.json)
+[Complete Example: Weapon](/guides/xmog/xmog-example-weapon.json)
+
+
+
 
 # Known Issues / Limitations
 
