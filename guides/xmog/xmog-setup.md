@@ -88,17 +88,19 @@ Example JSON:
 
 # Known Issues / Limitations
 
+## Armors
+- Armors MUST use Material Instances!
+- Armor materials dont seem to show unless they are bundled and set with a skeletal mesh that also uses them. I was thinking maybe something to do with the fact that all default game armor materials seem to be instances of `MI_PalLit_CharacterBodyBase`, which is an instance of `MI_PalLit`, which is an instance of `M_PalLit` (which is where that trail ends thankfully..). So perhaps that chain of inheritance is required or something? Maybe the M_PalLit material sets some property thats unique to armor materials? Not entirely sure why this is - if you know, please let me!
+
+
+## Armors [Head]
+- Head Equipment skins have to use the same socket on the skeleton! eg, `Socket_HairAttach_Ear_L`, `Socket_HairAttach_HeadEquip_front`, `Socket_HairAttach_SmallHat`. These cannot be mixed and matched.. eg: you cannot make a hat replace the mesh for an earing accessory!
+
+
 ## Weapons
-
-
-## body Armors
-Armor materials dont seem to show unless they are bundled and set with a skeletal mesh that also uses them.
-I was thinking maybe something to do with the fact that all default game armor materials seem to be instances of `MI_PalLit_CharacterBodyBase`, which is an instance of `MI_PalLit`, which is an instance of `M_PalLit` (which is where that trail ends thankfully..). So perhaps that chain of inheritance is required or something? Maybe the M_PalLit material sets some property thats unique to armor materials? Not entirely sure why this is - if you know, please let me!
-
-## Head Equip
-Head Equipment skins have to use the same socket on the skeleton! eg, `Socket_HairAttach_Ear_L`, `Socket_HairAttach_HeadEquip_front`, `Socket_HairAttach_SmallHat`. These cannot be mixed and matched.. eg: you cannot make a hat replace the mesh for an earing accessory!
+- Can use Materials/Maerial Instances
 
 
 
-[!] More coming soon <3
-
+>[!WARNING]  
+>More information coming soon <3
