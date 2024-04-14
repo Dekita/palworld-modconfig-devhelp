@@ -25,12 +25,19 @@ Example JSON:
 ```
 
 ## cond
-An array of condition objects (future implementation),
+An array of condition objects (detailed setup coming soon),
 
 Example JSON: 
 ```json
 {
-    "cond": "F"
+    "cond": ﻿[
+        {"type": "level", "req": 5},
+        {"type": "paldex", "req": "PalID", "min": 1},
+        {"type": "weight", "req": 500.0},
+        {"type": "bosskill", "req": "BossID"},
+        {"type": "bosskills", "req": 5},
+        {"type": "ft-point", "req": "FastTravelPointID"},
+    ]
 }
 ```
 
