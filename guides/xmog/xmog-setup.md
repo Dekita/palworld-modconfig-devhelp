@@ -2,6 +2,11 @@
 Note, example data below taken from `~mods/xMOG/DefaultArmors/DefaultHeadEquip005.skin.json`.
 
 
+>[!WARNING]  
+>If replacing the mesh for the item being reskinned, you MUST ensure that the mesh resides within a unique filepath in your unreal engine project/pak file contents. This path is also recommended to be as short as possible. I personally suggest creating a "SkinMods" folder within your unreal engine project's Content Folder, and then creating a personal subfolder within SkinMods for each of your skin mod paks.. eg: Content/SkinMods/MyDopeSkinMod/MeshAndMaterialFilesForTheModGoHERE
+
+
+
 ## gend [armor only]
 Allows item to be restricted (wont be shown within the ui at all) based on the players gender.
 Should be set to the gender of the player as a string, either "F" or "M", Can be left empty (null or completely undefined) to allow skin for any gender.

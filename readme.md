@@ -2,6 +2,11 @@
 This repository contains helpful guides for creating compatible configuration to interface with certain Palworld mods created by DekitaRPG@gmail.com. Most notibly, the [Mod Configuration Menu](https://www.nexusmods.com/palworld/mods/577), and [xMOG Reskin System](https://www.nexusmods.com/palworld/mods/1204). 
 
 
+## Recommended Programs
+[MS Visual Studio Code](https://code.visualstudio.com/) (for editing json files - recommend a json formatter extension to ensure valid json)
+[Palworld Mod Kit](https://github.com/localcc/PalworldModdingKit) (for creating blueprints mods - and hooking the mod config menu's save/update events)
+
+
 ## MCM: Mod Config Menu
 Provides an in-game user interface that allows lua+logic mod creators to easily interface with, that in turn allows players to configure variables used within the modders creations.. 
 
