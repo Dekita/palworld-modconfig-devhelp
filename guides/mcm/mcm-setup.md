@@ -45,7 +45,7 @@ Use the following nodes within your ue blueprint (assumes you are using Palworld
 The result should look something similar to this: 
 <img src="https://raw.githubusercontent.com/dekita/palworld-modconfig-devhelp/main/images/getjson-bp-example.png" style="margin-top: 28px;">
 
-At which point, you simply pull the value pin from the final "Get Field" node, and convert it to your desired data type for processing the confgiruation; integer, float, boolean, or string! 
+At which point, you simply pull the value pin from the final "Get Field" node, and convert it to your desired data type for processing the configuration; integer, float, boolean, or string! 
 
 
 ## For LUA Mods 
