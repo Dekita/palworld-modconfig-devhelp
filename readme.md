@@ -4,6 +4,7 @@ This repository contains helpful guides for creating compatible configuration to
 
 ## Recommended Programs
 [MS Visual Studio Code](https://code.visualstudio.com/) (for editing json files - recommend a json formatter extension to ensure valid json)
+
 [Palworld Mod Kit](https://github.com/localcc/PalworldModdingKit) (for creating blueprints mods - and hooking the mod config menu's save/update events)
 
 
