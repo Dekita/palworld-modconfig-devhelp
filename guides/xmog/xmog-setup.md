@@ -91,11 +91,45 @@ Example JSON:
 }
 ```
 
+
+## opts
+An object, similar to the configuration structure used for [Mod Config Menu](../mcm/mcm-structure.md), but for controlling material instance parameters on the skin. Not all MCM data object types are valid, but boolean, float, and color are! (other options will be shown, but wont affect material parameters)
+
+>[!WARNING]
+>This is an advanced feature. Do not try to use this for your skin mod until you have validated basic functionality. 
+
+Example JSON: 
+```json
+{
+    "DiffuseTintColor": {
+        "mats": [0],
+        "type": "color",
+        "init": {"r": 1,"g": 1,"b": 1,"a": 1}
+    },
+    "FresnelStrength": {
+        "mats": [1],
+        "type": "float",
+        "opts": {"min": 0,"max": 9.9, "step": 0.1},
+        "init": 2.5
+    }
+}
+```
+
+With the above example, this would create ui elements within the xMOG interface that control the material instance parameters of the same name. eg, DiffuseTintColor should be a valid parameter for the material instance. assuming it is, then when the value is changed and saved, the material's parameter will be updated. 
+
+The "mats" property is exclusive to skin.json "opts" and is not found within MCM config structure. "mats" should be an array of integers to tell the system which materials this property is allowed to control (in case you wish for some property to control more than one materials params)
+
+"float" type properties should be used for controlling 'Scalar Parameters'
+"color" type properties should be used for controlling 'Vector Parameters'
+"boolean" type properties should be used for controlling 'Scalar Parameters' (but will set it to either 0.0 or 1.0)
+(Static Switch parameters cannot be dynamically controlled, hence: static. This is why booleans control scalars the way they do, as you can use a simple lerp type approach to achieve a dynamic switch.
+
+<img src="https://raw.githubusercontent.com/dekita/palworld-modconfig-devhelp/main/images/scalar-switch.png" style="margin-top: 28px;">
+
+
 # Complete Examples 
 - [Complete Example: Armor](/guides/xmog/xmog-example-armor.json)
 - [Complete Example: Weapon](/guides/xmog/xmog-example-weapon.json)
-
-
 
 
 # Known Issues / Limitations
