@@ -19,10 +19,19 @@ Example JSON:
 }
 ```
 
-## head [head-equip only]
-An object containing various confirable properties for the head when this skinis enabled. The 'hair' boolean should identify if the skin includes hair on the mesh + hair material. 
+## head 
+An object containing various configurable properties for the head when this skin is enabled. 
+- "hide" [body-armor-only] a boolean to control if the players head/hair will be visible when the skin is equipped.
+- "hair" [head-equip-only] a boolean to identify if this skin includes a hair mesh and should be equipped on the hair slot.
 
-Example JSON: 
+Example JSON: [body-armor]
+```json
+{
+    "head": {"hide": true}
+}
+```
+
+Example JSON: [head-equip]
 ```json
 {
     "head": {"hair": false}
