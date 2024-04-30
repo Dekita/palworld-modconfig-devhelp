@@ -119,10 +119,11 @@ With the above example, this would create ui elements within the xMOG interface 
 
 The "mats" property is exclusive to skin.json "opts" and is not found within MCM config structure. "mats" should be an array of integers to tell the system which materials this property is allowed to control (in case you wish for some property to control more than one materials params)
 
-"float" type properties should be used for controlling 'Scalar Parameters'
-"color" type properties should be used for controlling 'Vector Parameters'
-"boolean" type properties should be used for controlling 'Scalar Parameters' (but will set it to either 0.0 or 1.0)
-(Static Switch parameters cannot be dynamically controlled, hence: static. This is why booleans control scalars the way they do, as you can use a simple lerp type approach to achieve a dynamic switch.
+- "float" type properties should be used for controlling 'Scalar Parameters'
+- "color" type properties should be used for controlling 'Vector Parameters'
+- "boolean" type properties should be used for controlling 'Scalar Parameters' (but will set it to either 0.0 or 1.0)
+
+Static Switch parameters cannot be dynamically controlled, hence: static. But...
 
 <img src="https://raw.githubusercontent.com/dekita/palworld-modconfig-devhelp/main/images/scalar-switch.png" style="margin-top: 28px;">
 
