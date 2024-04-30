@@ -117,6 +117,8 @@ Example JSON:
 
 With the above example, this would create ui elements within the xMOG interface that control the material instance parameters of the same name. eg, DiffuseTintColor should be a valid parameter for the material instance. assuming it is, then when the value is changed and saved, the material's parameter will be updated. 
 
+The "init" property is the initial value for the configuration. The "live" value used for regular MCM configuration is unused for the xmog's "opts" feature. 
+
 The "mats" property is exclusive to skin.json "opts" and is not found within MCM config structure. "mats" should be an array of integers to tell the system which materials this property is allowed to control (in case you wish for some property to control more than one materials params)
 
 - "float" type properties should be used for controlling 'Scalar Parameters'
